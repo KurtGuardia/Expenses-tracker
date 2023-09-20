@@ -103,11 +103,10 @@ function ExpensesContextProvider({ children }) {
     DUMMY_EXPENSES,
   )
 
-  function addExpense({ data }) {
-    function addExpense(expenseData) {
-      dispatch({ type: 'ADD', payload: expenseData })
-    }
+  function addExpense(expenseData) {
+    dispatch({ type: 'ADD', payload: expenseData })
   }
+
   function deleteExpense(id) {
     dispatch({ type: 'DELETE', payload: id })
   }
